@@ -311,7 +311,7 @@ struct ContentView: View {
                             if(self.x.count > 0 && !self.x.contains(".")){
                                 self.x += "."
                                 self.result = self.x
-                            } else if(self.y.count > 0 && !self.y.contains(".")){
+                            } else if(self.y != "0" && self.y.count > 0 && !self.y.contains(".")){
                                 self.y += "."
                                 self.result = self.y
                             }
